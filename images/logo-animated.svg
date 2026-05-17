@@ -1,0 +1,76 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="تفصيل كنب وستائر" style="max-width:340px;width:100%;height:auto;display:block">
+  <style>
+    .curtain-l { transform: translateX(100px); animation: openL 1.8s cubic-bezier(.55,.1,.25,1) .3s forwards; }
+    .curtain-r { transform: translateX(-100px); animation: openR 1.8s cubic-bezier(.55,.1,.25,1) .3s forwards; }
+    .chair { opacity: 0; transform: scale(.88); transform-origin: 250px 440px; animation: chairIn 1.4s cubic-bezier(.34,.1,.2,1.06) .9s forwards; }
+    .chair-loop { transform-origin: 250px 440px; animation: breathe 4.5s ease-in-out 3s infinite; }
+    .logo-text { opacity: 0; transform: translateY(-6px); animation: textIn 1s ease-out 1.6s forwards; }
+    .glow { transform-origin: 250px 300px; animation: pulse 5s ease-in-out infinite; }
+    @keyframes openL { to { transform: translateX(0); } }
+    @keyframes openR { to { transform: translateX(0); } }
+    @keyframes chairIn { to { opacity: 1; transform: scale(1); } }
+    @keyframes breathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.022); } }
+    @keyframes textIn { to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: .85; } }
+    svg:hover .chair-loop { animation-duration: 2.4s; }
+    @media (prefers-reduced-motion: reduce) {
+      .curtain-l,.curtain-r,.chair,.chair-loop,.logo-text,.glow { animation: none; opacity: 1; transform: none; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE3D4"/><stop offset="100%" stop-color="#FF9F86"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="50%" cy="58%" r="40%">
+      <stop offset="0%" stop-color="#FFEED1" stop-opacity=".95"/><stop offset="100%" stop-color="#FFEED1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="curtG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8B1421"/><stop offset="50%" stop-color="#D33449"/><stop offset="100%" stop-color="#6B0E18"/>
+    </linearGradient>
+    <linearGradient id="chairG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E63946"/><stop offset="60%" stop-color="#C81835"/><stop offset="100%" stop-color="#8B1421"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" rx="50" fill="url(#bg)"/>
+  <ellipse class="glow" cx="250" cy="300" rx="155" ry="195" fill="url(#spot)"/>
+  <rect x="35" y="50" width="430" height="8" rx="4" fill="#6B4A2A"/>
+  <circle cx="42" cy="54" r="11" fill="#4A3320"/><circle cx="458" cy="54" r="11" fill="#4A3320"/>
+  <g class="chair-loop"><g class="chair">
+    <ellipse cx="250" cy="455" rx="105" ry="8" fill="#000" opacity=".18"/>
+    <path d="M150,260 Q145,210 165,195 Q185,185 215,182 L285,182 Q315,185 335,195 Q355,210 350,260 L350,330 L150,330 Z" fill="url(#chairG)"/>
+    <path d="M165,210 Q170,260 175,330" stroke="#7B0E1A" stroke-width="2" fill="none" opacity=".4"/>
+    <path d="M335,210 Q330,260 325,330" stroke="#7B0E1A" stroke-width="2" fill="none" opacity=".4"/>
+    <path d="M140,270 Q135,260 145,255 Q160,255 165,265 L165,375 L135,375 Z" fill="#A41523"/>
+    <path d="M360,270 Q365,260 355,255 Q340,255 335,265 L335,375 L365,375 Z" fill="#A41523"/>
+    <path d="M150,330 L350,330 Q355,348 350,370 L150,370 Q145,348 150,330 Z" fill="#D02740"/>
+    <path d="M160,344 Q250,352 340,344" stroke="#7B0E1A" stroke-width="1.5" fill="none" opacity=".45"/>
+    <path d="M135,375 L365,375 L360,432 L140,432 Z" fill="#9D1421"/>
+    <rect x="148" y="432" width="14" height="22" rx="2" fill="#5C4327"/>
+    <rect x="338" y="432" width="14" height="22" rx="2" fill="#5C4327"/>
+    <circle cx="222" cy="225" r="3.5" fill="#6B0E18"/><circle cx="278" cy="225" r="3.5" fill="#6B0E18"/>
+    <circle cx="250" cy="255" r="3.5" fill="#6B0E18"/>
+  </g></g>
+  <g class="curtain-l">
+    <path d="M35,58 L215,58 L215,290 Q200,295 195,280 Q190,300 175,290 Q170,310 155,300 Q150,320 135,310 Q130,330 115,320 Q110,340 95,330 Q90,350 75,340 Q70,360 55,350 Q50,370 35,360 Z" fill="url(#curtG)"/>
+    <line x1="70" y1="60" x2="68" y2="345" stroke="#4F0810" stroke-width="2.5" opacity=".5"/>
+    <line x1="105" y1="60" x2="103" y2="325" stroke="#4F0810" stroke-width="2.5" opacity=".5"/>
+    <line x1="140" y1="60" x2="138" y2="315" stroke="#4F0810" stroke-width="2.5" opacity=".5"/>
+    <line x1="175" y1="60" x2="175" y2="295" stroke="#4F0810" stroke-width="2.5" opacity=".5"/>
+    <line x1="88" y1="60" x2="85" y2="335" stroke="#F09BAA" stroke-width="1.5" opacity=".5"/>
+    <line x1="158" y1="60" x2="157" y2="305" stroke="#F09BAA" stroke-width="1.5" opacity=".5"/>
+    <ellipse cx="125" cy="305" rx="60" ry="13" fill="#F5EEDC"/>
+    <ellipse cx="125" cy="305" rx="60" ry="13" fill="none" stroke="#C8BC9C" stroke-width="1.5"/>
+  </g>
+  <g class="curtain-r">
+    <path d="M465,58 L285,58 L285,290 Q300,295 305,280 Q310,300 325,290 Q330,310 345,300 Q350,320 365,310 Q370,330 385,320 Q390,340 405,330 Q410,350 425,340 Q430,360 445,350 Q450,370 465,360 Z" fill="url(#curtG)"/>
+    <line x1="430" y1="60" x2="432" y2="345" stroke="#4F0810" stroke-width="2.5" opacity=".5"/>
+    <line x1="395" y1="60" x2="397" y2="325" stroke="#4F0810" stroke-width="2.5" opacity=".5"/>
+    <line x1="360" y1="60" x2="362" y2="315" stroke="#4F0810" stroke-width="2.5" opacity=".5"/>
+    <line x1="325" y1="60" x2="325" y2="295" stroke="#4F0810" stroke-width="2.5" opacity=".5"/>
+    <line x1="412" y1="60" x2="415" y2="335" stroke="#F09BAA" stroke-width="1.5" opacity=".5"/>
+    <line x1="342" y1="60" x2="343" y2="305" stroke="#F09BAA" stroke-width="1.5" opacity=".5"/>
+    <ellipse cx="375" cy="305" rx="60" ry="13" fill="#F5EEDC"/>
+    <ellipse cx="375" cy="305" rx="60" ry="13" fill="none" stroke="#C8BC9C" stroke-width="1.5"/>
+  </g>
+  <text class="logo-text" x="250" y="135" text-anchor="middle" font-family="'Tajawal','Cairo',system-ui,sans-serif" font-size="46" font-weight="900" fill="#FFFFFF" stroke="#5C0B14" stroke-width="2" paint-order="stroke fill">تفصيل كنب وستائر</text>
+</svg>
