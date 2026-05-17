@@ -1,15 +1,1440 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<title>TAFSIL SITARA – Premium Curtains Riyadh</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1A1614" />
+
+<!-- ============================================================
+     SEO  — Arabic-first, Riyadh local, conversion-tuned
+============================================================ -->
+<title>تفصيل ستائر بالرياض | تنجيد كنب ومجالس | ستائر كهربائية – تفصيل ستارة</title>
+<meta name="description" content="تفصيل ستارة – ورشة فاخرة بالرياض متخصصة في تفصيل وتركيب الستائر، الستائر الكهربائية سومفي، تنجيد الكنب والمجالس، وتصليح الأثاث. قياس مجاني • ضمان • تغطية كل أحياء الرياض. اتصل الآن." />
+<meta name="keywords" content="تفصيل ستائر بالرياض, تركيب ستائر بالرياض, ستائر مودرن الرياض, ستائر كهربائية الرياض, تنجيد كنب بالرياض, تنجيد مجالس بالرياض, تصليح كنب بالرياض, ستائر فاخرة بالرياض, ستائر سومفي, upholstery Riyadh, curtains Riyadh" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://tafsil-sitara.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ar_SA" />
+<meta property="og:site_name" content="تفصيل ستارة" />
+<meta property="og:title" content="تفصيل ستارة | ستائر وتنجيد فاخر بالرياض" />
+<meta property="og:description" content="ورشة فاخرة لتفصيل الستائر، تنجيد المجالس والكنب، والستائر الكهربائية سومفي. خدمة منزلية في كل الرياض." />
+<meta property="og:url" content="https://tafsil-sitara.com/" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200" />
+
+<!-- ============================================================
+     Fonts — Tajawal (Arabic display + UI), Playfair (Latin accent)
+============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+<!-- Tailwind for utility classes (CDN keeps this single-file portable; in production move to compiled build) -->
+<script src="https://cdn.tailwindcss.com"></script>
 <script>
-  var lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
-  location.replace(lang.indexOf("ar") === 0 ? "index-ar.html" : "index-en.html");
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ivory: '#F8F4ED',
+          sand: '#EDE4D3',
+          stone: '#DDD0BC',
+          onyx: '#1A1614',
+          coal: '#2A2522',
+          smoke: '#6B6560',
+          gold: '#B89B65',
+          goldDeep: '#8B7344',
+          goldLight: '#D4BC8A',
+          line: '#E5DCC9',
+        },
+        fontFamily: {
+          ar: ['Tajawal', 'system-ui', 'sans-serif'],
+          serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          gar: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        },
+        boxShadow: {
+          soft: '0 8px 32px -12px rgba(26,22,20,0.18)',
+          card: '0 24px 60px -28px rgba(26,22,20,0.35)',
+        },
+      },
+    },
+  };
 </script>
-<meta http-equiv="refresh" content="0; url=index-en.html">
+
+<style>
+  :root {
+    --ivory: #F8F4ED;
+    --sand: #EDE4D3;
+    --onyx: #1A1614;
+    --gold: #B89B65;
+    --gold-deep: #8B7344;
+    --line: #E5DCC9;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Tajawal', system-ui, sans-serif;
+    background: var(--ivory);
+    color: var(--onyx);
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "kern", "liga";
+    /* Arabic needs more line-height */
+    line-height: 1.75;
+  }
+
+  /* Arabic display */
+  .h-display {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+  }
+
+  /* Latin accent for tiny labels & numerals */
+  .lat { font-family: 'Playfair Display', serif; font-style: italic; }
+  .lat-num { font-family: 'Playfair Display', serif; font-weight: 600; font-style: italic; }
+  .gar { font-family: 'Cormorant Garamond', serif; }
+
+  /* Editorial hairline divider */
+  .hairline {
+    background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
+    height: 1px;
+  }
+  .hairline-short {
+    display: inline-block;
+    width: 48px;
+    height: 1px;
+    background: var(--gold);
+    vertical-align: middle;
+    margin-inline: 12px;
+  }
+
+  /* Gold underline ornament — single thin line, no kitsch */
+  .gold-rule::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 1px;
+    background: var(--gold);
+    margin-top: 18px;
+  }
+  .gold-rule-center::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 1px;
+    background: var(--gold);
+    margin: 18px auto 0;
+  }
+
+  /* Eyebrow label — small caps Latin + dot */
+  .eyebrow {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+  }
+  .eyebrow-ar {
+    font-size: 13px;
+    letter-spacing: 0.22em;
+    color: var(--gold-deep);
+    font-weight: 500;
+  }
+
+  /* Button primary — onyx with gold border on hover */
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--onyx); color: #fff;
+    padding: 16px 30px; font-weight: 700; font-size: 15px;
+    border: 1px solid var(--onyx);
+    transition: all .35s cubic-bezier(.2,.7,.2,1);
+    position: relative; overflow: hidden;
+  }
+  .btn-primary:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+  .btn-gold {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--gold); color: #fff;
+    padding: 16px 30px; font-weight: 700; font-size: 15px;
+    border: 1px solid var(--gold);
+    transition: all .35s cubic-bezier(.2,.7,.2,1);
+  }
+  .btn-gold:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+  .btn-ghost {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: transparent; color: #fff;
+    padding: 16px 30px; font-weight: 600; font-size: 15px;
+    border: 1px solid rgba(255,255,255,0.45);
+    transition: all .35s ease;
+  }
+  .btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+
+  /* WhatsApp green */
+  .btn-wa { background: #25D366; border-color: #25D366; }
+  .btn-wa:hover { background: #1FB955; border-color: #1FB955; }
+
+  /* Card */
+  .lux-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    transition: all .5s cubic-bezier(.2,.7,.2,1);
+    position: relative;
+  }
+  .lux-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px -30px rgba(26,22,20,0.28);
+    border-color: var(--gold);
+  }
+  .lux-card::after {
+    content: "";
+    position: absolute; inset-inline-start: 0; bottom: 0;
+    width: 0; height: 2px; background: var(--gold);
+    transition: width .5s ease;
+  }
+  .lux-card:hover::after { width: 100%; }
+
+  /* Numbered step circle */
+  .step-num {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 42px;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  /* Hero — luxurious image with cinematic overlay */
+  .hero-bg {
+    background:
+      linear-gradient(180deg, rgba(26,22,20,0.35) 0%, rgba(26,22,20,0.55) 60%, rgba(26,22,20,0.85) 100%),
+      url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat;
+  }
+  .hero-bg-2 {
+    background:
+      linear-gradient(180deg, rgba(26,22,20,0.45) 0%, rgba(26,22,20,0.7) 100%),
+      url('https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat;
+  }
+
+  /* Subtle grain overlay for editorial richness */
+  .grain {
+    position: relative;
+  }
+  .grain::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+    opacity: 0.5;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+
+  /* Stagger reveal animation */
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .reveal { animation: rise 1s cubic-bezier(.2,.7,.2,1) both; }
+  .d1 { animation-delay: .1s; } .d2 { animation-delay: .25s; } .d3 { animation-delay: .4s; }
+  .d4 { animation-delay: .55s; } .d5 { animation-delay: .7s; } .d6 { animation-delay: .85s; }
+
+  /* Marquee for districts */
+  @keyframes scroll-x {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .marquee-inner { animation: scroll-x 45s linear infinite; }
+
+  /* Before/After comparison slider */
+  .ba-wrap { position: relative; overflow: hidden; user-select: none; touch-action: none; }
+  .ba-after { position: absolute; inset: 0; clip-path: inset(0 0 0 50%); }
+  html[dir="rtl"] .ba-after { clip-path: inset(0 50% 0 0); }
+  .ba-handle {
+    position: absolute; top: 0; bottom: 0; width: 2px; background: #fff;
+    left: 50%; transform: translateX(-50%);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  }
+  .ba-handle::before {
+    content: ""; position: absolute; top: 50%; left: 50%;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: #fff; transform: translate(-50%, -50%);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+  .ba-handle::after {
+    content: "⇆"; position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--onyx); font-weight: 700; font-size: 18px;
+    z-index: 2;
+  }
+  .ba-label {
+    position: absolute; top: 16px;
+    background: rgba(26,22,20,0.85); color: #fff;
+    padding: 6px 14px; font-size: 12px; letter-spacing: 0.1em; font-weight: 600;
+  }
+
+  /* Accordion */
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .acc-icon { transform: rotate(45deg); }
+  .acc-icon { transition: transform .35s ease; }
+
+  /* ====================================================
+     FLOATING CTA CLUSTER — Call + WhatsApp, always visible
+  ==================================================== */
+  .fab {
+    position: relative;
+    width: 56px; height: 56px;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 10px 28px rgba(0,0,0,.20), 0 3px 8px rgba(0,0,0,.10);
+    transition: transform .25s ease, box-shadow .25s ease;
+    text-decoration: none;
+  }
+  .fab:hover, .fab:focus-visible {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 16px 36px rgba(0,0,0,.25), 0 5px 12px rgba(0,0,0,.14);
+    outline: none;
+  }
+  .fab-wa   { background: #25D366; }
+  .fab-call { background: #B89B65; }
+  .fab-call:hover, .fab-call:focus-visible { background: #A88656; }
+
+  /* Pulse rings — separate keyframes per color, staggered */
+  @keyframes pulse-green {
+    0%   { box-shadow: 0 10px 28px rgba(0,0,0,.20), 0 3px 8px rgba(0,0,0,.10), 0 0 0 0   rgba(37,211,102,.55); }
+    70%  { box-shadow: 0 10px 28px rgba(0,0,0,.20), 0 3px 8px rgba(0,0,0,.10), 0 0 0 18px rgba(37,211,102,0);   }
+    100% { box-shadow: 0 10px 28px rgba(0,0,0,.20), 0 3px 8px rgba(0,0,0,.10), 0 0 0 0   rgba(37,211,102,0);   }
+  }
+  @keyframes pulse-gold {
+    0%   { box-shadow: 0 10px 28px rgba(0,0,0,.20), 0 3px 8px rgba(0,0,0,.10), 0 0 0 0   rgba(184,155,101,.6); }
+    70%  { box-shadow: 0 10px 28px rgba(0,0,0,.20), 0 3px 8px rgba(0,0,0,.10), 0 0 0 18px rgba(184,155,101,0);   }
+    100% { box-shadow: 0 10px 28px rgba(0,0,0,.20), 0 3px 8px rgba(0,0,0,.10), 0 0 0 0   rgba(184,155,101,0);   }
+  }
+  .fab-wa   { animation: pulse-green 2.4s infinite; }
+  .fab-call { animation: pulse-gold  2.4s infinite; animation-delay: 1.2s; }
+
+  /* Hover label — desktop only, sits to the right of button (toward viewport center) */
+  .fab-label {
+    position: absolute;
+    left: calc(100% + 14px);
+    top: 50%;
+    transform: translate(8px, -50%);
+    white-space: nowrap;
+    background: #1A1614;
+    color: #F8F4ED;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .22s ease, transform .22s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,.18);
+  }
+  .fab-label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-right-color: #1A1614;
+  }
+  .fab:hover .fab-label,
+  .fab:focus-visible .fab-label {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+
+  /* Mobile: smaller buttons, no labels, lifted above the bottom CTA bar */
+  @media (max-width: 767px) {
+    .fab { width: 52px; height: 52px; }
+    .fab-label { display: none; }
+  }
+
+  /* Honor reduced-motion users */
+  @media (prefers-reduced-motion: reduce) {
+    .fab-wa, .fab-call { animation: none; }
+    .fab { transition: none; }
+    .fab:hover, .fab:focus-visible { transform: none; }
+  }
+
+  /* Hide scrollbar on horizontal scrollers */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Decorative corner ornament for hero */
+  .corner-ornament {
+    position: absolute;
+    width: 80px; height: 80px;
+    border-color: var(--gold);
+    pointer-events: none;
+  }
+
+  /* Mobile bottom bar safe area */
+  .mobile-cta-bar { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+
+  /* Numeric counter — uses Playfair italic for elegance */
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: clamp(48px, 6vw, 72px);
+    line-height: 1;
+    color: var(--gold-deep);
+  }
+
+  /* Logo wordmark */
+  .logo-mark {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+  }
+  .logo-sub {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    margin-top: -2px;
+  }
+
+  /* Disable Tailwind preflight conflicts for buttons */
+  button { font-family: inherit; }
+
+  /* Header scrolled state */
+  .header-scrolled {
+    background: rgba(248,244,237,0.96) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .header-scrolled .nav-link { color: var(--onyx); }
+  .header-scrolled .logo-mark { color: var(--onyx); }
+
+  /* Image hover for gallery */
+  .gallery-item { overflow: hidden; position: relative; }
+  .gallery-item img { transition: transform 1s cubic-bezier(.2,.7,.2,1); }
+  .gallery-item:hover img { transform: scale(1.06); }
+  .gallery-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(26,22,20,0.85) 0%, rgba(26,22,20,0) 50%);
+    display: flex; align-items: flex-end; padding: 20px;
+    opacity: 0; transition: opacity .5s ease;
+  }
+  .gallery-item:hover .gallery-overlay { opacity: 1; }
+
+  /* Smooth carousel snap */
+  .snap-x-mand { scroll-snap-type: x mandatory; }
+  .snap-start { scroll-snap-align: start; }
+
+  /* Reduce motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+</style>
+
+<!-- ============================================================
+     Structured Data — LocalBusiness + Service + FAQPage
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://tafsil-sitara.com/#business",
+  "name": "تفصيل ستارة",
+  "alternateName": "Tafsil Sitara",
+  "image": "https://tafsil-sitara.com/og.jpg",
+  "url": "https://tafsil-sitara.com/",
+  "telephone": "+966548119581",
+  "priceRange": "$$$",
+  "description": "ورشة فاخرة لتفصيل وتركيب الستائر، تنجيد الكنب والمجالس، الستائر الكهربائية، وتصليح الأثاث في الرياض.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "الرياض",
+    "addressRegion": "منطقة الرياض",
+    "addressCountry": "SA"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 24.7136, "longitude": 46.6753 },
+  "areaServed": [
+    {"@type":"City","name":"الرياض"},
+    {"@type":"AdministrativeArea","name":"حي العليا"},
+    {"@type":"AdministrativeArea","name":"حي الملقا"},
+    {"@type":"AdministrativeArea","name":"حي حطين"},
+    {"@type":"AdministrativeArea","name":"حي الياسمين"},
+    {"@type":"AdministrativeArea","name":"حي النرجس"},
+    {"@type":"AdministrativeArea","name":"حي الورود"},
+    {"@type":"AdministrativeArea","name":"حي السفارات"},
+    {"@type":"AdministrativeArea","name":"حي الدرعية"}
+  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00", "closes": "23:00"
+  }],
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"387"},
+  "sameAs": [
+    "https://www.instagram.com/tafsil_sitara",
+    "https://wa.me/966548119581"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"كم تستغرق عملية تفصيل وتركيب الستائر؟","acceptedAnswer":{"@type":"Answer","text":"عادةً من 5 إلى 10 أيام عمل من تاريخ تأكيد الطلب واختيار القماش، وقد تختلف حسب نوع القماش والكميات. التركيب يستغرق ساعات قليلة فقط."}},
+    {"@type":"Question","name":"هل خدمة القياس مجانية فعلاً؟","acceptedAnswer":{"@type":"Answer","text":"نعم. فني الموقع يأتي لمنزلك في أي حي بالرياض لأخذ المقاسات الدقيقة وعرض عينات الأقمشة على الإضاءة الطبيعية مجاناً دون أي التزام بالشراء."}},
+    {"@type":"Question","name":"ما الفرق بين ستائر سومفي والستائر اليدوية؟","acceptedAnswer":{"@type":"Answer","text":"ستائر سومفي الكهربائية تعمل بمحركات ذكية ألمانية، يمكن التحكم بها عبر التطبيق، الصوت، أو الريموت، وتدخل ضمن أنظمة المنزل الذكي. توفر هدوءاً كاملاً وحماية للقماش من السحب اليدوي."}},
+    {"@type":"Question","name":"هل تقدمون ضمان على التنجيد والستائر؟","acceptedAnswer":{"@type":"Answer","text":"نعم. ضمان شامل سنتان على التنجيد والخياطة، وضمان 5 سنوات على محركات سومفي الكهربائية، مع صيانة مجانية خلال أول 6 أشهر."}},
+    {"@type":"Question","name":"هل تغطون كافة أحياء الرياض؟","acceptedAnswer":{"@type":"Answer","text":"نعم — نقدم خدمة القياس والتركيب في كل أحياء الرياض: العليا، الملقا، حطين، الياسمين، النرجس، السفارات، الورود، الربيع، النخيل، الدرعية وغيرها."}},
+    {"@type":"Question","name":"كيف أحصل على عرض سعر؟","acceptedAnswer":{"@type":"Answer","text":"تواصل معنا عبر واتساب أو اتصل مباشرة، أو احجز قياس مجاني من خلال النموذج. نرسل لك عرضاً تفصيلياً خلال 24 ساعة بعد القياس."}}
+  ]
+}
+</script>
 </head>
-<body>
-<p>Redirecting… <a href="index-en.html">English</a> | <a href="index-ar.html">العربية</a></p>
+
+<body class="font-ar text-onyx bg-ivory">
+
+<!-- ============================================================
+     1) Top Announcement Bar — gold thin, dismissible (always visible CTA)
+============================================================ -->
+<div id="topbar" class="bg-onyx text-ivory text-[13px] leading-none">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="inline-block w-1.5 h-1.5 rounded-full bg-gold"></span>
+      <span class="font-medium tracking-wide">قياس مجاني في منزلك • ضمان شامل • تغطية كل أحياء الرياض</span>
+    </div>
+    <div class="hidden md:flex items-center gap-5">
+      <a href="tel:+966548119581" class="hover:text-gold transition-colors flex items-center gap-2">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span dir="ltr">+966 54 811 9581</span>
+      </a>
+      <span class="text-smoke">|</span>
+      <span>السبت – الجمعة • 9 ص – 11 م</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     2) Header — sticky, transparent over hero, solid after scroll
+============================================================ -->
+<header id="header" class="absolute top-10 inset-x-0 z-40 transition-all duration-500">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <!-- Logo (right in RTL) -->
+    <a href="#" class="flex items-center gap-3 text-white">
+      <!-- Mark — a custom monogram (T + ﺱ stylized as curtain rod with gold tassel) -->
+      <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
+        <rect x="2" y="2" width="44" height="44" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+        <path d="M10 14 L38 14" stroke="#B89B65" stroke-width="1.5"/>
+        <path d="M14 14 L14 36 M20 14 L20 34 M26 14 L26 36 M32 14 L32 34" stroke="currentColor" stroke-width="1"/>
+        <circle cx="24" cy="14" r="2" fill="#B89B65"/>
+      </svg>
+      <div class="leading-tight">
+        <div class="logo-mark">تفصيل ستارة</div>
+        <div class="logo-sub">Tafsil · Sitara</div>
+      </div>
+    </a>
+
+    <!-- Nav -->
+    <nav class="hidden lg:flex items-center gap-9 text-[15px] font-medium">
+      <a href="#home" class="nav-link text-white hover:text-gold transition-colors">الرئيسية</a>
+      <a href="#services" class="nav-link text-white hover:text-gold transition-colors">خدماتنا</a>
+      <a href="#gallery" class="nav-link text-white hover:text-gold transition-colors">المعرض</a>
+      <a href="#process" class="nav-link text-white hover:text-gold transition-colors">آلية العمل</a>
+      <a href="#reviews" class="nav-link text-white hover:text-gold transition-colors">آراء العملاء</a>
+      <a href="#faq" class="nav-link text-white hover:text-gold transition-colors">أسئلة شائعة</a>
+      <a href="#contact" class="nav-link text-white hover:text-gold transition-colors">اتصل بنا</a>
+    </nav>
+
+    <!-- Right side: language + CTA -->
+    <div class="flex items-center gap-3">
+      <button class="hidden sm:inline-block text-white text-[13px] tracking-widest hover:text-gold transition-colors" aria-label="Switch to English">EN</button>
+      <a href="https://wa.me/966548119581?text=السلام%20عليكم،%20أرغب%20بطلب%20قياس%20مجاني" class="hidden sm:inline-flex items-center gap-2 bg-gold text-white px-5 h-11 font-bold text-[14px] hover:bg-goldDeep transition-colors">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26L4.27 19.45l3.384-.997zm6.659-5.61c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+        احجز قياس مجاني
+      </a>
+      <button id="menuBtn" class="lg:hidden text-white p-2" aria-label="فتح القائمة">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="lg:hidden hidden bg-onyx/97 backdrop-blur-md border-t border-white/10">
+    <nav class="px-6 py-6 flex flex-col gap-1">
+      <a href="#home" class="text-white py-3 border-b border-white/10">الرئيسية</a>
+      <a href="#services" class="text-white py-3 border-b border-white/10">خدماتنا</a>
+      <a href="#gallery" class="text-white py-3 border-b border-white/10">المعرض</a>
+      <a href="#process" class="text-white py-3 border-b border-white/10">آلية العمل</a>
+      <a href="#reviews" class="text-white py-3 border-b border-white/10">آراء العملاء</a>
+      <a href="#faq" class="text-white py-3 border-b border-white/10">أسئلة شائعة</a>
+      <a href="#contact" class="text-white py-3">اتصل بنا</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================================================
+     3) HERO — full-bleed, editorial, single-message
+============================================================ -->
+<section id="home" class="hero-bg grain relative min-h-[100svh] flex items-end overflow-hidden">
+  <!-- Decorative corners -->
+  <div class="corner-ornament top-32 right-4 sm:right-8 border-t border-r hidden sm:block"></div>
+  <div class="corner-ornament bottom-8 left-4 sm:left-8 border-b border-l hidden sm:block"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 sm:pb-32 pt-40 w-full">
+    <div class="max-w-3xl">
+      <div class="reveal d1 mb-6 flex items-center gap-3 text-goldLight">
+        <span class="h-px w-12 bg-goldLight"></span>
+        <span class="eyebrow-ar">ورشة تفصيل فاخرة • الرياض</span>
+      </div>
+
+      <h1 class="reveal d2 h-display text-white text-[40px] sm:text-[58px] lg:text-[72px] leading-[1.15] mb-7">
+        ستائر تُفصَّل بذوقك،<br>
+        ومجالس تُنجَّد <span class="gar italic text-goldLight font-normal">بإتقان نادر</span>.
+      </h1>
+
+      <p class="reveal d3 text-ivory/85 text-[17px] sm:text-[19px] leading-[1.85] max-w-xl mb-10">
+        منذ سنوات نُعيد تعريف الفخامة في البيوت السعودية —
+        تفصيل ستائر مودرن وكلاسيك، ستائر كهربائية سومفي،
+        تنجيد كنب ومجالس بأقمشة عالمية، وتصليح يُعيد الحياة لأثاثك. خدمة بيتية كاملة في كل أحياء الرياض.
+      </p>
+
+      <div class="reveal d4 flex flex-wrap gap-3">
+        <a href="https://wa.me/966548119581?text=السلام%20عليكم،%20أرغب%20بطلب%20قياس%20مجاني%20من%20موقع%20تفصيل%20ستارة" class="btn-gold btn-wa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26L4.27 19.45l3.384-.997zm6.659-5.61c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+          راسلنا واتساب
+        </a>
+        <a href="tel:+966548119581" class="btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          اتصل الآن
+        </a>
+      </div>
+
+      <!-- Hero trust strip -->
+      <div class="reveal d5 mt-14 grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-5 text-ivory/90 border-t border-white/15 pt-7 max-w-2xl">
+        <div>
+          <div class="lat-num text-3xl text-goldLight">12+</div>
+          <div class="text-[13px] text-ivory/75 mt-1">عاماً من الخبرة</div>
+        </div>
+        <div>
+          <div class="lat-num text-3xl text-goldLight">3,400+</div>
+          <div class="text-[13px] text-ivory/75 mt-1">منزل ومجلس</div>
+        </div>
+        <div>
+          <div class="lat-num text-3xl text-goldLight">24h</div>
+          <div class="text-[13px] text-ivory/75 mt-1">عرض سعر مضمون</div>
+        </div>
+        <div>
+          <div class="lat-num text-3xl text-goldLight">★ 4.9</div>
+          <div class="text-[13px] text-ivory/75 mt-1">تقييم العملاء</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll cue -->
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-ivory/60 text-xs tracking-widest hidden md:flex flex-col items-center gap-2">
+    <span>اسحب للأسفل</span>
+    <span class="block w-px h-10 bg-ivory/30"></span>
+  </div>
+</section>
+
+<!-- ============================================================
+     4) Logo / Brands strip — luxury partners (Somfy, etc.)
+============================================================ -->
+<section class="bg-ivory border-b border-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 text-smoke">
+      <span class="eyebrow-ar text-smoke">أقمشة ومحركات عالمية:</span>
+      <span class="gar text-2xl font-medium tracking-wider text-onyx/80">SOMFY</span>
+      <span class="text-line">●</span>
+      <span class="gar text-2xl italic text-onyx/80">Zimmer + Rohde</span>
+      <span class="text-line">●</span>
+      <span class="gar text-2xl font-medium tracking-widest text-onyx/80">JAB</span>
+      <span class="text-line">●</span>
+      <span class="gar text-2xl italic text-onyx/80">Dedar</span>
+      <span class="text-line">●</span>
+      <span class="gar text-2xl font-medium tracking-wider text-onyx/80">Romo</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5) Services — 6 cards, editorial grid
+============================================================ -->
+<section id="services" class="py-20 sm:py-28 bg-ivory">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="eyebrow-ar mb-4">خدماتنا</div>
+      <h2 class="h-display text-4xl sm:text-5xl mb-5">كل ما يحتاجه بيتك،<br>تحت سقف واحد.</h2>
+      <div class="hairline-short"></div>
+      <p class="text-smoke text-[17px] mt-5">من تفصيل أول قطعة قماش حتى آخر مسمار في الكنب — فريق واحد، جودة واحدة، ضمان واحد.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <article class="lux-card p-8 group">
+        <div class="flex items-start justify-between mb-7">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#B89B65" stroke-width="1.2">
+            <path d="M6 6h36M10 6v36M16 6c0 4 -2 6 -2 12s2 8 2 12 -2 4 -2 6M22 6c0 4 -2 6 -2 12s2 8 2 12 -2 4 -2 6M28 6c0 4 -2 6 -2 12s2 8 2 12 -2 4 -2 6M34 6c0 4 -2 6 -2 12s2 8 2 12 -2 4 -2 6M38 6v36"/>
+          </svg>
+          <span class="lat-num text-stone text-3xl">01</span>
+        </div>
+        <h3 class="h-display text-2xl mb-3">تفصيل وتركيب الستائر</h3>
+        <p class="text-smoke text-[15.5px] leading-[1.85] mb-5">ستائر مودرن، كلاسيك، ويف، روماني، رول، شيفون مزدوج — مفصّلة بمقاسات منزلك بدقة ميليمترية وأقمشة مستوردة.</p>
+        <a href="#contact" class="inline-flex items-center gap-2 text-goldDeep font-semibold text-[14px] hover:gap-3 transition-all">
+          اطلب الآن
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" transform="scale(-1,1) translate(-24,0)"/></svg>
+        </a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="lux-card p-8 group">
+        <div class="flex items-start justify-between mb-7">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#B89B65" stroke-width="1.2">
+            <rect x="4" y="22" width="40" height="16" rx="2"/>
+            <path d="M8 22V16a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v6"/>
+            <path d="M4 38v4M44 38v4M14 22h20"/>
+          </svg>
+          <span class="lat-num text-stone text-3xl">02</span>
+        </div>
+        <h3 class="h-display text-2xl mb-3">تنجيد المجالس</h3>
+        <p class="text-smoke text-[15.5px] leading-[1.85] mb-5">مجالس عربية وسعودية فاخرة، أرضية ومرتفعة، بإسفنج طبي عالي الكثافة وأقمشة مقاومة للأكل والبقع.</p>
+        <a href="#contact" class="inline-flex items-center gap-2 text-goldDeep font-semibold text-[14px] hover:gap-3 transition-all">
+          اطلب الآن
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" transform="scale(-1,1) translate(-24,0)"/></svg>
+        </a>
+      </article>
+
+      <!-- Card 3 — Highlighted -->
+      <article class="lux-card p-8 group bg-onyx text-white border-onyx">
+        <div class="flex items-start justify-between mb-7">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#D4BC8A" stroke-width="1.2">
+            <rect x="6" y="10" width="36" height="6"/>
+            <path d="M10 16v28M38 16v28M14 16v24M18 16v26M22 16v24M26 16v26M30 16v24M34 16v26"/>
+            <circle cx="42" cy="13" r="2" fill="#D4BC8A"/>
+          </svg>
+          <span class="lat-num text-goldLight/40 text-3xl">03</span>
+        </div>
+        <div class="inline-block bg-gold text-onyx text-[11px] font-bold px-2.5 py-1 mb-3 tracking-widest">الأكثر طلباً</div>
+        <h3 class="h-display text-2xl mb-3">ستائر كهربائية ذكية</h3>
+        <p class="text-ivory/75 text-[15.5px] leading-[1.85] mb-5">محركات سومفي الألمانية الأصلية، تحكم بالتطبيق والصوت، تكامل كامل مع المنزل الذكي. ضمان 5 سنوات.</p>
+        <a href="#contact" class="inline-flex items-center gap-2 text-goldLight font-semibold text-[14px] hover:gap-3 transition-all">
+          احجز استشارة
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" transform="scale(-1,1) translate(-24,0)"/></svg>
+        </a>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="lux-card p-8 group">
+        <div class="flex items-start justify-between mb-7">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#B89B65" stroke-width="1.2">
+            <path d="M6 26c0-4 3-7 7-7h22c4 0 7 3 7 7v8H6v-8z"/>
+            <path d="M10 19v-3a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v3M6 34v6M42 34v6"/>
+          </svg>
+          <span class="lat-num text-stone text-3xl">04</span>
+        </div>
+        <h3 class="h-display text-2xl mb-3">تنجيد الكنب</h3>
+        <p class="text-smoke text-[15.5px] leading-[1.85] mb-5">إعادة تنجيد كاملة لأي قطعة كنب — تغيير القماش، الإسفنج، النوابض. ضمان سنتان على الخياطة.</p>
+        <a href="#contact" class="inline-flex items-center gap-2 text-goldDeep font-semibold text-[14px] hover:gap-3 transition-all">
+          اطلب الآن
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" transform="scale(-1,1) translate(-24,0)"/></svg>
+        </a>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="lux-card p-8 group">
+        <div class="flex items-start justify-between mb-7">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#B89B65" stroke-width="1.2">
+            <path d="M8 36V20l16-12 16 12v16H8z"/>
+            <path d="M18 36V26h12v10"/>
+            <circle cx="34" cy="14" r="3"/>
+            <path d="M32 14h-2M34 16v2"/>
+          </svg>
+          <span class="lat-num text-stone text-3xl">05</span>
+        </div>
+        <h3 class="h-display text-2xl mb-3">تصليح وترميم الأثاث</h3>
+        <p class="text-smoke text-[15.5px] leading-[1.85] mb-5">تصليح الإطارات الخشبية، استبدال النوابض، إصلاح المفصلات والآليات. تعالج كنبك بدل أن ترميه.</p>
+        <a href="#contact" class="inline-flex items-center gap-2 text-goldDeep font-semibold text-[14px] hover:gap-3 transition-all">
+          اطلب الآن
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" transform="scale(-1,1) translate(-24,0)"/></svg>
+        </a>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="lux-card p-8 group">
+        <div class="flex items-start justify-between mb-7">
+          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#B89B65" stroke-width="1.2">
+            <path d="M24 4l4 8 8 1-6 6 1 8-7-4-7 4 1-8-6-6 8-1z"/>
+            <path d="M18 28l-4 14 10-6 10 6-4-14"/>
+          </svg>
+          <span class="lat-num text-stone text-3xl">06</span>
+        </div>
+        <h3 class="h-display text-2xl mb-3">تشطيبات وديكور فاخر</h3>
+        <p class="text-smoke text-[15.5px] leading-[1.85] mb-5">ورق جدران، تنسيق ألوان، وسائد ومخدات مفصّلة، أغطية تكميلية لتناغم بصري كامل.</p>
+        <a href="#contact" class="inline-flex items-center gap-2 text-goldDeep font-semibold text-[14px] hover:gap-3 transition-all">
+          اطلب الآن
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" transform="scale(-1,1) translate(-24,0)"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6) WHY US — split editorial section
+============================================================ -->
+<section class="py-20 sm:py-28 bg-white border-y border-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+    <div>
+      <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1200&q=85" alt="ستائر فاخرة في مجلس سعودي بالرياض" class="w-full h-[520px] object-cover" loading="lazy" />
+    </div>
+    <div>
+      <div class="eyebrow-ar mb-4">لماذا تفصيل ستارة</div>
+      <h2 class="h-display text-4xl sm:text-5xl mb-6">ليست مجرد ستائر —<br><span class="gar italic text-goldDeep font-normal">هي توقيع بيتك.</span></h2>
+      <p class="text-smoke text-[17px] leading-[1.95] mb-10">12 عاماً ونحن نخدم بيوت الرياض الفاخرة: من فلل حي السفارات وقصور الدرعية، إلى شقق العليا وبرجلت الياسمين. نؤمن أن البيت لا يكتمل بالأثاث — بل بالتفاصيل التي تحيط به.</p>
+
+      <div class="grid sm:grid-cols-2 gap-x-8 gap-y-7">
+        <div class="border-t border-line pt-5">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B89B65" stroke-width="1.5"><path d="M12 2L3 7v6c0 5 4 9 9 10 5-1 9-5 9-10V7l-9-5z"/><path d="m9 12 2 2 4-4"/></svg>
+            <h4 class="font-bold text-[17px]">ضمان حقيقي مكتوب</h4>
+          </div>
+          <p class="text-smoke text-[14.5px] leading-[1.8]">سنتان على التنجيد، 5 سنوات على محركات سومفي، صيانة مجانية 6 شهور.</p>
+        </div>
+        <div class="border-t border-line pt-5">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B89B65" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <h4 class="font-bold text-[17px]">عرض سعر خلال 24 ساعة</h4>
+          </div>
+          <p class="text-smoke text-[14.5px] leading-[1.8]">لا انتظار. الفني يأتي، يقيس، ونرسل لك التفاصيل قبل اليوم التالي.</p>
+        </div>
+        <div class="border-t border-line pt-5">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B89B65" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><path d="M9 22V12h6v10"/></svg>
+            <h4 class="font-bold text-[17px]">قياس مجاني في منزلك</h4>
+          </div>
+          <p class="text-smoke text-[14.5px] leading-[1.8]">فنينا يأتي لمنزلك مع كتالوج الأقمشة الكامل. عينات على إضاءتك الطبيعية.</p>
+        </div>
+        <div class="border-t border-line pt-5">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B89B65" stroke-width="1.5"><path d="M20 7L9 18l-5-5"/></svg>
+            <h4 class="font-bold text-[17px]">أقمشة عالمية أصلية</h4>
+          </div>
+          <p class="text-smoke text-[14.5px] leading-[1.8]">شركاء معتمدون لـ JAB وZimmer + Rohde وRomo. شهادة منشأ لكل قطعة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     7) BEFORE / AFTER — interactive drag slider
+============================================================ -->
+<section class="py-20 sm:py-28 bg-ivory">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <div class="eyebrow-ar mb-4">قبل وبعد</div>
+      <h2 class="h-display text-4xl sm:text-5xl mb-5">انظر الفرق بنفسك</h2>
+      <p class="text-smoke text-[16.5px]">اسحب للمقارنة بين الكنب قبل التنجيد وبعده — نفس القطعة، روح جديدة.</p>
+    </div>
+
+    <div id="baSlider" class="ba-wrap aspect-[16/10] sm:aspect-[16/9] bg-onyx">
+      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1600&q=85" alt="مجلس قبل التنجيد" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+      <div class="ba-after">
+        <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1600&q=85" alt="مجلس بعد التنجيد الفاخر" class="w-full h-full object-cover" loading="lazy" />
+      </div>
+      <div class="ba-handle" id="baHandle"></div>
+      <div class="ba-label right-4">قبل</div>
+      <div class="ba-label left-4">بعد</div>
+    </div>
+
+    <p class="text-center mt-6 text-smoke text-[14px]"><span class="lat italic text-goldDeep">— </span> مجلس فيلا • حي حطين • مدة العمل: 5 أيام</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     8) PORTFOLIO / GALLERY — editorial masonry
+============================================================ -->
+<section id="gallery" class="py-20 sm:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-12 gap-6">
+      <div>
+        <div class="eyebrow-ar mb-4">المعرض</div>
+        <h2 class="h-display text-4xl sm:text-5xl">أعمالنا الأخيرة في الرياض</h2>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <button class="gallery-filter px-5 py-2.5 border border-onyx text-[13px] font-bold bg-onyx text-white" data-filter="all">الكل</button>
+        <button class="gallery-filter px-5 py-2.5 border border-line text-[13px] font-bold hover:border-onyx transition-colors" data-filter="curtains">ستائر</button>
+        <button class="gallery-filter px-5 py-2.5 border border-line text-[13px] font-bold hover:border-onyx transition-colors" data-filter="majlis">مجالس</button>
+        <button class="gallery-filter px-5 py-2.5 border border-line text-[13px] font-bold hover:border-onyx transition-colors" data-filter="sofa">كنب</button>
+        <button class="gallery-filter px-5 py-2.5 border border-line text-[13px] font-bold hover:border-onyx transition-colors" data-filter="smart">كهربائية</button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5" id="galleryGrid">
+      <a href="#" class="gallery-item aspect-[3/4] md:row-span-2 md:aspect-auto" data-cat="curtains">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="ستائر مودرن بحي الملقا الرياض" loading="lazy" class="w-full h-full object-cover" />
+        <div class="gallery-overlay text-white">
+          <div>
+            <div class="lat italic text-goldLight text-sm">No. 01</div>
+            <div class="font-bold text-lg">ستائر مودرن • الملقا</div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="gallery-item aspect-square" data-cat="majlis">
+        <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=80" alt="تنجيد مجلس عربي فاخر بالرياض" loading="lazy" class="w-full h-full object-cover" />
+        <div class="gallery-overlay text-white"><div><div class="lat italic text-goldLight text-sm">No. 02</div><div class="font-bold text-lg">مجلس فاخر • السفارات</div></div></div>
+      </a>
+      <a href="#" class="gallery-item aspect-square" data-cat="sofa">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80" alt="تنجيد كنب أمريكي حي حطين" loading="lazy" class="w-full h-full object-cover" />
+        <div class="gallery-overlay text-white"><div><div class="lat italic text-goldLight text-sm">No. 03</div><div class="font-bold text-lg">كنب مودرن • حطين</div></div></div>
+      </a>
+      <a href="#" class="gallery-item aspect-[3/4] md:row-span-2 md:aspect-auto" data-cat="smart">
+        <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=900&q=80" alt="ستائر كهربائية سومفي بفيلا الرياض" loading="lazy" class="w-full h-full object-cover" />
+        <div class="gallery-overlay text-white"><div><div class="lat italic text-goldLight text-sm">No. 04</div><div class="font-bold text-lg">ستائر سومفي • الياسمين</div></div></div>
+      </a>
+      <a href="#" class="gallery-item aspect-square" data-cat="curtains">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="ستائر كلاسيك بحي العليا الرياض" loading="lazy" class="w-full h-full object-cover" />
+        <div class="gallery-overlay text-white"><div><div class="lat italic text-goldLight text-sm">No. 05</div><div class="font-bold text-lg">ستائر كلاسيك • العليا</div></div></div>
+      </a>
+      <a href="#" class="gallery-item aspect-square" data-cat="majlis">
+        <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=900&q=80" alt="مجلس نسائي فاخر بالنرجس" loading="lazy" class="w-full h-full object-cover" />
+        <div class="gallery-overlay text-white"><div><div class="lat italic text-goldLight text-sm">No. 06</div><div class="font-bold text-lg">مجلس نسائي • النرجس</div></div></div>
+      </a>
+      <a href="#" class="gallery-item aspect-square" data-cat="sofa">
+        <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=900&q=80" alt="كنب جلدي مفصل بالدرعية" loading="lazy" class="w-full h-full object-cover" />
+        <div class="gallery-overlay text-white"><div><div class="lat italic text-goldLight text-sm">No. 07</div><div class="font-bold text-lg">كنب جلدي • الدرعية</div></div></div>
+      </a>
+      <a href="#" class="gallery-item aspect-square" data-cat="curtains">
+        <img src="https://images.unsplash.com/photo-1583845112203-29329902332e?auto=format&fit=crop&w=900&q=80" alt="ستائر شيفون مزدوجة بالرياض" loading="lazy" class="w-full h-full object-cover" />
+        <div class="gallery-overlay text-white"><div><div class="lat italic text-goldLight text-sm">No. 08</div><div class="font-bold text-lg">شيفون مزدوج • الورود</div></div></div>
+      </a>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#contact" class="inline-flex items-center gap-3 border-b border-onyx pb-1 font-bold hover:gap-4 transition-all">
+        شاهد كل المشاريع
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" transform="scale(-1,1) translate(-24,0)"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     9) PROCESS — 4 steps
+============================================================ -->
+<section id="process" class="py-20 sm:py-28 bg-onyx text-white relative overflow-hidden">
+  <div class="absolute inset-0 grain opacity-30 pointer-events-none"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="eyebrow-ar mb-4" style="color:#D4BC8A">آلية العمل</div>
+      <h2 class="h-display text-4xl sm:text-5xl mb-5 text-white">أربع خطوات. <span class="gar italic text-goldLight font-normal">بلا تعقيد.</span></h2>
+      <div class="hairline-short" style="background:#B89B65"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6">
+      <div class="relative">
+        <div class="step-num mb-5">01</div>
+        <h3 class="font-bold text-xl mb-3">تواصل مجاني</h3>
+        <p class="text-ivory/70 text-[15px] leading-[1.85]">اتصل أو راسل واتساب — نحدد موعد القياس في نفس اليوم أو اليوم التالي.</p>
+        <span class="hidden lg:block absolute top-6 -left-3 w-6 h-px bg-gold/40"></span>
+      </div>
+      <div class="relative">
+        <div class="step-num mb-5">02</div>
+        <h3 class="font-bold text-xl mb-3">قياس وعينات</h3>
+        <p class="text-ivory/70 text-[15px] leading-[1.85]">يأتي فنينا بكامل كتالوج الأقمشة — تختار على إضاءة منزلك ومع ديكوراتك.</p>
+        <span class="hidden lg:block absolute top-6 -left-3 w-6 h-px bg-gold/40"></span>
+      </div>
+      <div class="relative">
+        <div class="step-num mb-5">03</div>
+        <h3 class="font-bold text-xl mb-3">تفصيل في الورشة</h3>
+        <p class="text-ivory/70 text-[15px] leading-[1.85]">حرفيون متخصصون يفصّلون قطعتك بدقة. تتلقى صوراً للتقدم خلال التنفيذ.</p>
+        <span class="hidden lg:block absolute top-6 -left-3 w-6 h-px bg-gold/40"></span>
+      </div>
+      <div>
+        <div class="step-num mb-5">04</div>
+        <h3 class="font-bold text-xl mb-3">تركيب نظيف</h3>
+        <p class="text-ivory/70 text-[15px] leading-[1.85]">فريق التركيب يصل في الموعد المحدد، يركّب، ينظّف، ولا يغادر إلا بعد رضاك التام.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-14">
+      <a href="https://wa.me/966548119581" class="btn-gold">
+        ابدأ الآن — قياس مجاني
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" transform="scale(-1,1) translate(-24,0)"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     10) RIYADH COVERAGE — districts marquee
+============================================================ -->
+<section class="py-16 bg-ivory border-y border-line overflow-hidden">
+  <div class="text-center mb-8">
+    <div class="eyebrow-ar mb-3">نخدم كل الرياض</div>
+    <h2 class="h-display text-2xl sm:text-3xl">تغطية كاملة لأحياء الرياض الشمالية والشرقية والغربية</h2>
+  </div>
+  <div class="relative">
+    <div class="marquee-inner flex gap-12 whitespace-nowrap w-max">
+      <!-- duplicated twice for seamless loop -->
+      <div class="flex gap-12 text-onyx/70 text-xl font-bold tracking-wider">
+        <span>● حي العليا</span><span>● حي الملقا</span><span>● حي حطين</span><span>● حي الياسمين</span><span>● حي النرجس</span><span>● حي السفارات</span><span>● حي الورود</span><span>● حي الربيع</span><span>● حي النخيل</span><span>● حي الصحافة</span><span>● حي قرطبة</span><span>● حي الروضة</span><span>● حي الدرعية</span><span>● حي الإزدهار</span><span>● حي الياسمين</span><span>● حي الغدير</span>
+      </div>
+      <div class="flex gap-12 text-onyx/70 text-xl font-bold tracking-wider" aria-hidden="true">
+        <span>● حي العليا</span><span>● حي الملقا</span><span>● حي حطين</span><span>● حي الياسمين</span><span>● حي النرجس</span><span>● حي السفارات</span><span>● حي الورود</span><span>● حي الربيع</span><span>● حي النخيل</span><span>● حي الصحافة</span><span>● حي قرطبة</span><span>● حي الروضة</span><span>● حي الدرعية</span><span>● حي الإزدهار</span><span>● حي الياسمين</span><span>● حي الغدير</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     11) TESTIMONIALS — luxury review cards carousel
+============================================================ -->
+<section id="reviews" class="py-20 sm:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-12 gap-4">
+      <div>
+        <div class="eyebrow-ar mb-4">ماذا يقولون عنا</div>
+        <h2 class="h-display text-4xl sm:text-5xl">أربعة آلاف بيت <br class="hidden sm:block">يشهدون.</h2>
+      </div>
+      <div class="flex items-center gap-6">
+        <div>
+          <div class="flex gap-1 text-gold mb-1">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <div class="text-smoke text-sm"><span class="lat-num text-onyx font-bold">4.9</span> من 5 • 387 تقييم Google</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="lux-card p-8">
+        <div class="text-gold text-3xl gar leading-none mb-4">“</div>
+        <p class="text-onyx text-[16px] leading-[1.95] mb-6">طلبنا تنجيد مجلس الرجال كاملاً قبل العيد. الفريق دقيق، الأقمشة عالمية فعلاً، والتسليم في الموعد. شي يستاهل كل ريال.</p>
+        <div class="border-t border-line pt-4 flex items-center justify-between">
+          <div>
+            <div class="font-bold">عبدالعزيز الشمري</div>
+            <div class="text-smoke text-sm">حي الملقا • تنجيد مجلس</div>
+          </div>
+          <div class="flex gap-0.5 text-gold text-sm">★★★★★</div>
+        </div>
+      </article>
+
+      <article class="lux-card p-8">
+        <div class="text-gold text-3xl gar leading-none mb-4">“</div>
+        <p class="text-onyx text-[16px] leading-[1.95] mb-6">ركبوا لنا ستائر سومفي كهربائية في كامل الفيلا. التطبيق يشتغل بشكل ممتاز، والصوت صفر. أفضل قرار اتخذناه في الديكور.</p>
+        <div class="border-t border-line pt-4 flex items-center justify-between">
+          <div>
+            <div class="font-bold">د. سارة الفهد</div>
+            <div class="text-smoke text-sm">حي السفارات • ستائر كهربائية</div>
+          </div>
+          <div class="flex gap-0.5 text-gold text-sm">★★★★★</div>
+        </div>
+      </article>
+
+      <article class="lux-card p-8">
+        <div class="text-gold text-3xl gar leading-none mb-4">“</div>
+        <p class="text-onyx text-[16px] leading-[1.95] mb-6">كنبتنا الأمريكي عمره 7 سنين كنت بستبدلها. أعادوا تنجيدها وصارت أحلى من الجديد. الورشة بصراحة معاملتها راقية ومحترفة.</p>
+        <div class="border-t border-line pt-4 flex items-center justify-between">
+          <div>
+            <div class="font-bold">منى العتيبي</div>
+            <div class="text-smoke text-sm">حي الياسمين • تنجيد كنب</div>
+          </div>
+          <div class="flex gap-0.5 text-gold text-sm">★★★★★</div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Google reviews trust badge -->
+    <div class="mt-12 flex flex-wrap items-center justify-center gap-8 text-smoke text-sm">
+      <div class="flex items-center gap-2">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+        <span><strong class="text-onyx">Google</strong> • 4.9/5 (387 تقييم)</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+        <span><strong class="text-onyx">Instagram</strong> • +25k متابع</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#B89B65"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279L.001 9.306l8.332-1.151z"/></svg>
+        <span><strong class="text-onyx">شريك معتمد</strong> • Somfy KSA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     12) FAQ — accordion (FAQPage schema attached above)
+============================================================ -->
+<section id="faq" class="py-20 sm:py-28 bg-ivory">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <div class="eyebrow-ar mb-4">أسئلة شائعة</div>
+      <h2 class="h-display text-4xl sm:text-5xl mb-5">أسئلة تُسأل كثيراً</h2>
+      <div class="hairline-short"></div>
+    </div>
+
+    <div class="space-y-3">
+      <details class="bg-white border border-line p-6 group">
+        <summary class="flex items-center justify-between gap-4">
+          <h3 class="font-bold text-[18px]">كم تستغرق عملية تفصيل وتركيب الستائر؟</h3>
+          <span class="acc-icon text-goldDeep text-2xl font-light shrink-0">+</span>
+        </summary>
+        <p class="mt-4 text-smoke leading-[1.95]">عادةً من 5 إلى 10 أيام عمل من تاريخ تأكيد الطلب واختيار القماش، وقد تختلف حسب نوع القماش والكميات. التركيب يستغرق ساعات قليلة فقط في موعد يحدده العميل.</p>
+      </details>
+
+      <details class="bg-white border border-line p-6">
+        <summary class="flex items-center justify-between gap-4">
+          <h3 class="font-bold text-[18px]">هل خدمة القياس مجانية فعلاً؟</h3>
+          <span class="acc-icon text-goldDeep text-2xl font-light shrink-0">+</span>
+        </summary>
+        <p class="mt-4 text-smoke leading-[1.95]">نعم — فني الموقع يأتي لمنزلك في أي حي بالرياض لأخذ المقاسات الدقيقة وعرض عينات الأقمشة على الإضاءة الطبيعية، دون أي التزام بالشراء. عرض السعر يصلك خلال 24 ساعة.</p>
+      </details>
+
+      <details class="bg-white border border-line p-6">
+        <summary class="flex items-center justify-between gap-4">
+          <h3 class="font-bold text-[18px]">ما الفرق بين ستائر سومفي والستائر اليدوية؟</h3>
+          <span class="acc-icon text-goldDeep text-2xl font-light shrink-0">+</span>
+        </summary>
+        <p class="mt-4 text-smoke leading-[1.95]">ستائر سومفي الكهربائية تعمل بمحركات ذكية ألمانية، يمكن التحكم بها عبر التطبيق، الصوت (Alexa, Google Home)، أو الريموت. تدخل ضمن أنظمة المنزل الذكي، توفر هدوءاً كاملاً عند الفتح والإغلاق، وتحمي القماش من السحب اليدوي المتكرر.</p>
+      </details>
+
+      <details class="bg-white border border-line p-6">
+        <summary class="flex items-center justify-between gap-4">
+          <h3 class="font-bold text-[18px]">هل تقدمون ضمان على التنجيد والستائر؟</h3>
+          <span class="acc-icon text-goldDeep text-2xl font-light shrink-0">+</span>
+        </summary>
+        <p class="mt-4 text-smoke leading-[1.95]">نعم — ضمان شامل سنتان على التنجيد والخياطة، وضمان 5 سنوات على محركات سومفي الكهربائية، مع صيانة مجانية خلال أول 6 أشهر بعد التركيب.</p>
+      </details>
+
+      <details class="bg-white border border-line p-6">
+        <summary class="flex items-center justify-between gap-4">
+          <h3 class="font-bold text-[18px]">هل تغطون كافة أحياء الرياض؟</h3>
+          <span class="acc-icon text-goldDeep text-2xl font-light shrink-0">+</span>
+        </summary>
+        <p class="mt-4 text-smoke leading-[1.95]">نعم — نقدم خدمة القياس والتركيب في كل أحياء الرياض: العليا، الملقا، حطين، الياسمين، النرجس، السفارات، الورود، الربيع، النخيل، الدرعية، قرطبة، الصحافة، وغيرها. نخدم أيضاً المشاريع الكبيرة في الدرعية والخرج.</p>
+      </details>
+
+      <details class="bg-white border border-line p-6">
+        <summary class="flex items-center justify-between gap-4">
+          <h3 class="font-bold text-[18px]">كيف أحصل على عرض سعر؟</h3>
+          <span class="acc-icon text-goldDeep text-2xl font-light shrink-0">+</span>
+        </summary>
+        <p class="mt-4 text-smoke leading-[1.95]">تواصل معنا عبر واتساب أو اتصل مباشرة، أو احجز قياس مجاني من خلال النموذج أدناه. نرسل لك عرضاً تفصيلياً مكتوباً يشمل القماش، التنفيذ، التركيب، والضمان خلال 24 ساعة بعد القياس.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     13) FINAL CTA — Request Free Measurement Form
+============================================================ -->
+<section id="contact" class="hero-bg-2 grain relative py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20 relative">
+
+    <div class="text-white">
+      <div class="mb-4 flex items-center gap-3 text-goldLight">
+        <span class="h-px w-12 bg-goldLight"></span>
+        <span class="eyebrow-ar text-goldLight">قياس مجاني</span>
+      </div>
+      <h2 class="h-display text-4xl sm:text-5xl text-white mb-6 leading-tight">احجز زيارة فني <br><span class="gar italic text-goldLight font-normal">لمنزلك — مجاناً.</span></h2>
+      <p class="text-ivory/85 text-[16.5px] leading-[1.95] mb-10 max-w-md">اترك رقمك ونتواصل خلال ساعة. الفني يأتي بكامل كتالوج الأقمشة، يأخذ المقاسات، ويقدم لك عرضاً مكتوباً خلال 24 ساعة.</p>
+
+      <div class="space-y-4 text-ivory">
+        <a href="tel:+966548119581" class="flex items-center gap-4 group">
+          <span class="w-12 h-12 border border-gold rounded-full flex items-center justify-center group-hover:bg-gold transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          </span>
+          <div>
+            <div class="text-[13px] text-ivory/60">اتصل الآن</div>
+            <div class="text-xl font-bold" dir="ltr">+966 54 811 9581</div>
+          </div>
+        </a>
+        <a href="https://wa.me/966548119581" class="flex items-center gap-4 group">
+          <span class="w-12 h-12 border border-gold rounded-full flex items-center justify-center group-hover:bg-gold transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26L4.27 19.45l3.384-.997z"/></svg>
+          </span>
+          <div>
+            <div class="text-[13px] text-ivory/60">واتساب • أسرع رد</div>
+            <div class="text-xl font-bold">راسلنا الآن</div>
+          </div>
+        </a>
+        <div class="flex items-center gap-4">
+          <span class="w-12 h-12 border border-gold rounded-full flex items-center justify-center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </span>
+          <div>
+            <div class="text-[13px] text-ivory/60">ساعات العمل</div>
+            <div class="text-[16px] font-bold">السبت – الجمعة • 9 صباحاً – 11 مساءً</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form class="bg-ivory p-8 sm:p-10 shadow-card" onsubmit="event.preventDefault(); window.location.href='https://wa.me/966548119581?text='+encodeURIComponent('السلام عليكم، الاسم: '+this.name.value+'، الجوال: '+this.phone.value+'، الخدمة: '+this.service.value+'، الحي: '+this.district.value+'، التفاصيل: '+this.notes.value);">
+      <h3 class="h-display text-2xl mb-2">اطلب قياس مجاني</h3>
+      <p class="text-smoke text-[14.5px] mb-6">نتصل بك خلال ساعة لتحديد الموعد.</p>
+
+      <div class="space-y-4">
+        <div>
+          <label class="block text-[13px] font-bold mb-1.5">الاسم الكامل</label>
+          <input name="name" required type="text" placeholder="مثال: عبدالله العتيبي" class="w-full bg-white border border-line px-4 py-3.5 text-[15px] focus:border-gold focus:outline-none transition-colors" />
+        </div>
+        <div>
+          <label class="block text-[13px] font-bold mb-1.5">رقم الجوال</label>
+          <input name="phone" required type="tel" pattern="[0-9+\s]+" placeholder="05XXXXXXXX" dir="ltr" class="w-full bg-white border border-line px-4 py-3.5 text-[15px] focus:border-gold focus:outline-none transition-colors text-right" />
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-[13px] font-bold mb-1.5">الخدمة</label>
+            <select name="service" required class="w-full bg-white border border-line px-4 py-3.5 text-[15px] focus:border-gold focus:outline-none transition-colors">
+              <option value="">اختر…</option>
+              <option>تفصيل ستائر</option>
+              <option>ستائر كهربائية</option>
+              <option>تنجيد مجلس</option>
+              <option>تنجيد كنب</option>
+              <option>تصليح كنب</option>
+              <option>خدمة شاملة</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-[13px] font-bold mb-1.5">الحي</label>
+            <input name="district" required type="text" placeholder="مثال: الملقا" class="w-full bg-white border border-line px-4 py-3.5 text-[15px] focus:border-gold focus:outline-none transition-colors" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-[13px] font-bold mb-1.5">تفاصيل إضافية <span class="text-smoke font-normal">(اختياري)</span></label>
+          <textarea name="notes" rows="3" placeholder="عدد النوافذ، نوع القماش المرغوب، الموعد المناسب…" class="w-full bg-white border border-line px-4 py-3 text-[15px] focus:border-gold focus:outline-none transition-colors resize-none"></textarea>
+        </div>
+
+        <button type="submit" class="btn-gold btn-wa w-full justify-center">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26L4.27 19.45l3.384-.997z"/></svg>
+          أرسل الطلب عبر واتساب
+        </button>
+        <p class="text-center text-[12px] text-smoke leading-relaxed">بإرسال الطلب أنت توافق على تواصلنا معك عبر الجوال أو الواتساب لتحديد موعد القياس المجاني.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================
+     14) FOOTER
+============================================================ -->
+<footer class="bg-onyx text-ivory pt-20 pb-32 lg:pb-12 relative grain">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-3 mb-5">
+          <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
+            <rect x="2" y="2" width="44" height="44" stroke="#fff" stroke-width="1" opacity="0.5"/>
+            <path d="M10 14 L38 14" stroke="#B89B65" stroke-width="1.5"/>
+            <path d="M14 14 L14 36 M20 14 L20 34 M26 14 L26 36 M32 14 L32 34" stroke="#fff" stroke-width="1"/>
+            <circle cx="24" cy="14" r="2" fill="#B89B65"/>
+          </svg>
+          <div class="leading-tight">
+            <div class="logo-mark text-white">تفصيل ستارة</div>
+            <div class="logo-sub" style="color:#D4BC8A">Tafsil · Sitara</div>
+          </div>
+        </div>
+        <p class="text-ivory/65 text-[14.5px] leading-[1.95] mb-5">ورشة فاخرة لتفصيل الستائر، تنجيد المجالس والكنب، والستائر الكهربائية في كل أحياء الرياض.</p>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Instagram" class="w-9 h-9 border border-ivory/20 flex items-center justify-center hover:border-gold hover:text-gold transition-colors">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok" class="w-9 h-9 border border-ivory/20 flex items-center justify-center hover:border-gold hover:text-gold transition-colors">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V8.93a8.16 8.16 0 0 0 4.77 1.52V7a4.85 4.85 0 0 1-1.84-.31z"/></svg>
+          </a>
+          <a href="#" aria-label="X" class="w-9 h-9 border border-ivory/20 flex items-center justify-center hover:border-gold hover:text-gold transition-colors">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="Snapchat" class="w-9 h-9 border border-ivory/20 flex items-center justify-center hover:border-gold hover:text-gold transition-colors">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.166 2c-2.94 0-5.31 2.4-5.31 5.36 0 .57.06 1.13.18 1.65-.4.04-.78.18-1.1.4-.42.3-.7.74-.7 1.27 0 .9.84 1.63 1.86 1.63.06 0 .12 0 .18-.02-.24.32-.5.62-.78.9-.8.78-1.78 1.38-2.84 1.78-.3.12-.5.4-.5.72 0 .14.04.28.1.4.06.1.16.2.28.26.66.32 1.4.54 2.2.64.04.1.08.2.12.32.04.14.1.24.18.34.16.18.4.28.66.28.16 0 .32-.04.46-.08.32-.1.66-.18 1-.18.6 0 1.18.2 1.68.58.84.6 1.92.96 3.08.96 1.16 0 2.24-.36 3.08-.96.5-.38 1.08-.58 1.68-.58.34 0 .68.08 1 .18.14.04.3.08.46.08.26 0 .5-.1.66-.28.08-.1.14-.2.18-.34.04-.12.08-.22.12-.32.8-.1 1.54-.32 2.2-.64.12-.06.22-.16.28-.26.06-.12.1-.26.1-.4 0-.32-.2-.6-.5-.72-1.06-.4-2.04-1-2.84-1.78-.28-.28-.54-.58-.78-.9.06.02.12.02.18.02 1.02 0 1.86-.74 1.86-1.63 0-.54-.28-.97-.7-1.27-.32-.22-.7-.36-1.1-.4.12-.52.18-1.08.18-1.65C17.476 4.4 15.106 2 12.166 2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-bold mb-5 text-[15px] flex items-center gap-2"><span class="w-6 h-px bg-gold"></span>خدماتنا</h4>
+        <ul class="space-y-3 text-[14.5px] text-ivory/70">
+          <li><a href="#" class="hover:text-gold transition-colors">تفصيل وتركيب الستائر</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">الستائر الكهربائية سومفي</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">تنجيد المجالس العربية</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">تنجيد الكنب الأمريكي والمودرن</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">تصليح الكنب والأثاث</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">ديكور وتشطيبات داخلية</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold mb-5 text-[15px] flex items-center gap-2"><span class="w-6 h-px bg-gold"></span>روابط سريعة</h4>
+        <ul class="space-y-3 text-[14.5px] text-ivory/70">
+          <li><a href="#services" class="hover:text-gold transition-colors">من نحن</a></li>
+          <li><a href="#gallery" class="hover:text-gold transition-colors">المعرض</a></li>
+          <li><a href="#reviews" class="hover:text-gold transition-colors">آراء العملاء</a></li>
+          <li><a href="#faq" class="hover:text-gold transition-colors">الأسئلة الشائعة</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">المدونة</a></li>
+          <li><a href="#contact" class="hover:text-gold transition-colors">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold mb-5 text-[15px] flex items-center gap-2"><span class="w-6 h-px bg-gold"></span>تواصل</h4>
+        <ul class="space-y-4 text-[14.5px] text-ivory/70">
+          <li class="flex gap-3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B89B65" stroke-width="1.5" class="shrink-0 mt-0.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>الرياض، المملكة العربية السعودية<br>نخدم كافة الأحياء</span></li>
+          <li class="flex gap-3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B89B65" stroke-width="1.5" class="shrink-0 mt-0.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><a href="tel:+966548119581" class="hover:text-gold" dir="ltr">+966 54 811 9581</a></li>
+          <li class="flex gap-3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B89B65" stroke-width="1.5" class="shrink-0 mt-0.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@tafsil-sitara.com" class="hover:text-gold">info@tafsil-sitara.com</a></li>
+          <li class="flex gap-3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B89B65" stroke-width="1.5" class="shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>السبت – الجمعة<br>9:00 ص – 11:00 م</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hairline my-12"></div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-ivory/50">
+      <div>© <span class="lat-num">2026</span> تفصيل ستارة • جميع الحقوق محفوظة</div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-gold">سياسة الخصوصية</a>
+        <a href="#" class="hover:text-gold">الشروط والأحكام</a>
+        <a href="#" class="hover:text-gold">سياسة الإرجاع</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     15) FLOATING CTA CLUSTER — Call + WhatsApp on every screen.
+         Mobile: lifted above the mobile-cta-bar (bottom-24).
+         Desktop: classic FAB position (bottom-6).
+============================================================ -->
+<div class="fixed left-4 sm:left-6 bottom-24 md:bottom-6 z-40 flex flex-col gap-3" aria-label="تواصل سريع">
+  <a href="https://wa.me/966548119581?text=السلام%20عليكم،%20أرغب%20بمعرفة%20المزيد%20عن%20خدماتكم"
+     class="fab fab-wa"
+     aria-label="تواصل عبر واتساب"
+     data-cta="whatsapp"
+     target="_blank"
+     rel="noopener">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26L4.27 19.45l3.384-.997zm6.659-5.61c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+    <span class="fab-label">واتساب فوراً</span>
+  </a>
+  <a href="tel:+966548119581"
+     class="fab fab-call"
+     aria-label="اتصل الآن"
+     data-cta="call">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+    <span class="fab-label">اتصل الآن</span>
+  </a>
+</div>
+
+<!-- ============================================================
+     16) STICKY MOBILE CTA BAR — always-visible 3-button bar
+============================================================ -->
+<div class="mobile-cta-bar md:hidden fixed bottom-0 inset-x-0 z-50 bg-onyx text-white border-t border-gold/30 grid grid-cols-3 divide-x divide-white/10 [direction:ltr]">
+  <a href="tel:+966548119581" class="flex flex-col items-center justify-center gap-1 py-3" dir="rtl">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+    <span class="text-[12px] font-bold">اتصل</span>
+  </a>
+  <a href="https://wa.me/966548119581" class="flex flex-col items-center justify-center gap-1 py-3 bg-[#25D366]" dir="rtl">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26L4.27 19.45l3.384-.997z"/></svg>
+    <span class="text-[12px] font-bold">واتساب</span>
+  </a>
+  <a href="#contact" class="flex flex-col items-center justify-center gap-1 py-3 bg-gold" dir="rtl">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+    <span class="text-[12px] font-bold">قياس مجاني</span>
+  </a>
+</div>
+
+<!-- ============================================================
+     JS — header behavior, mobile menu, gallery filter, B/A slider
+============================================================ -->
+<script>
+  // Header solid after scroll
+  const header = document.getElementById('header');
+  const topbar = document.getElementById('topbar');
+  const onScroll = () => {
+    if (window.scrollY > 80) header.classList.add('header-scrolled', 'top-0');
+    else { header.classList.remove('header-scrolled'); header.classList.remove('top-0'); }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  mobileMenu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  // Gallery filter
+  const filters = document.querySelectorAll('.gallery-filter');
+  const items = document.querySelectorAll('#galleryGrid .gallery-item');
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(b => { b.classList.remove('bg-onyx','text-white','border-onyx'); b.classList.add('border-line'); });
+      btn.classList.add('bg-onyx','text-white','border-onyx');
+      btn.classList.remove('border-line');
+      const cat = btn.dataset.filter;
+      items.forEach(item => {
+        if (cat === 'all' || item.dataset.cat === cat) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Before/After slider — drag handle (RTL-aware)
+  const baSlider = document.getElementById('baSlider');
+  if (baSlider) {
+    const handle = baSlider.querySelector('.ba-handle');
+    const after  = baSlider.querySelector('.ba-after');
+    const isRtl = document.documentElement.dir === 'rtl';
+
+    let dragging = false;
+    const setPos = (clientX) => {
+      const rect = baSlider.getBoundingClientRect();
+      let x = clientX - rect.left;
+      x = Math.max(0, Math.min(rect.width, x));
+      const pct = (x / rect.width) * 100;
+      handle.style.left = pct + '%';
+      if (isRtl) {
+        // In RTL: "after" should reveal from right side as you drag left
+        after.style.clipPath = `inset(0 ${pct}% 0 0)`;
+      } else {
+        after.style.clipPath = `inset(0 0 0 ${pct}%)`;
+      }
+    };
+
+    const start = () => { dragging = true; document.body.style.userSelect = 'none'; };
+    const end   = () => { dragging = false; document.body.style.userSelect = ''; };
+    const move  = (e) => {
+      if (!dragging) return;
+      const x = e.touches ? e.touches[0].clientX : e.clientX;
+      setPos(x);
+    };
+
+    handle.addEventListener('mousedown', start);
+    handle.addEventListener('touchstart', start, { passive: true });
+    baSlider.addEventListener('mousedown', (e) => { start(); setPos(e.clientX); });
+    baSlider.addEventListener('touchstart', (e) => { start(); setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('mousemove', move);
+    window.addEventListener('touchmove', move, { passive: true });
+    window.addEventListener('mouseup', end);
+    window.addEventListener('touchend', end);
+  }
+</script>
+
 </body>
 </html>
