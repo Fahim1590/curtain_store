@@ -555,14 +555,26 @@
     </a>
 
     <!-- Nav -->
-    <nav class="hidden lg:flex items-center gap-9 text-[15px] font-medium">
-      <a href="#home" class="nav-link text-white hover:text-gold transition-colors">الرئيسية</a>
-      <a href="#services" class="nav-link text-white hover:text-gold transition-colors">خدماتنا</a>
-      <a href="#gallery" class="nav-link text-white hover:text-gold transition-colors">المعرض</a>
-      <a href="#process" class="nav-link text-white hover:text-gold transition-colors">آلية العمل</a>
-      <a href="#reviews" class="nav-link text-white hover:text-gold transition-colors">آراء العملاء</a>
-      <a href="#faq" class="nav-link text-white hover:text-gold transition-colors">أسئلة شائعة</a>
-      <a href="#contact" class="nav-link text-white hover:text-gold transition-colors">اتصل بنا</a>
+    <nav class="hidden lg:flex items-center gap-7 text-[15px] font-medium">
+      <a href="index.html" class="nav-link text-white hover:text-gold transition-colors">الرئيسية</a>
+      <a href="about.html" class="nav-link text-white hover:text-gold transition-colors">من نحن</a>
+      <div class="relative group">
+        <button class="nav-link text-white hover:text-gold transition-colors flex items-center gap-1">
+          خدماتنا
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="absolute top-full right-0 mt-3 w-56 bg-onyx/97 backdrop-blur-md border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="curtains.html" class="block px-5 py-3 text-white hover:text-gold hover:bg-white/5 transition-colors border-b border-white/10">تفصيل الستائر</a>
+          <a href="electric-curtains.html" class="block px-5 py-3 text-white hover:text-gold hover:bg-white/5 transition-colors border-b border-white/10">الستائر الكهربائية</a>
+          <a href="majlis.html" class="block px-5 py-3 text-white hover:text-gold hover:bg-white/5 transition-colors border-b border-white/10">تنجيد المجالس</a>
+          <a href="upholstery.html" class="block px-5 py-3 text-white hover:text-gold hover:bg-white/5 transition-colors border-b border-white/10">تنجيد الكنب</a>
+          <a href="sofa-repair.html" class="block px-5 py-3 text-white hover:text-gold hover:bg-white/5 transition-colors">تصليح الكنب</a>
+        </div>
+      </div>
+      <a href="gallery.html" class="nav-link text-white hover:text-gold transition-colors">المعرض</a>
+      <a href="free-measurement.html" class="nav-link text-white hover:text-gold transition-colors">قياس مجاني</a>
+      <a href="blog.html" class="nav-link text-white hover:text-gold transition-colors">المدونة</a>
+      <a href="contact.html" class="nav-link text-white hover:text-gold transition-colors">اتصل بنا</a>
     </nav>
 
     <!-- Right side: language + CTA -->
@@ -581,13 +593,22 @@
   <!-- Mobile menu -->
   <div id="mobileMenu" class="lg:hidden hidden bg-onyx/97 backdrop-blur-md border-t border-white/10">
     <nav class="px-6 py-6 flex flex-col gap-1">
-      <a href="#home" class="text-white py-3 border-b border-white/10">الرئيسية</a>
-      <a href="#services" class="text-white py-3 border-b border-white/10">خدماتنا</a>
-      <a href="#gallery" class="text-white py-3 border-b border-white/10">المعرض</a>
-      <a href="#process" class="text-white py-3 border-b border-white/10">آلية العمل</a>
-      <a href="#reviews" class="text-white py-3 border-b border-white/10">آراء العملاء</a>
-      <a href="#faq" class="text-white py-3 border-b border-white/10">أسئلة شائعة</a>
-      <a href="#contact" class="text-white py-3">اتصل بنا</a>
+      <a href="index.html" class="text-white py-3 border-b border-white/10">الرئيسية</a>
+      <a href="about.html" class="text-white py-3 border-b border-white/10">من نحن</a>
+      <div class="py-3 border-b border-white/10">
+        <div class="text-gold text-[13px] font-bold mb-2 tracking-wider">خدماتنا</div>
+        <div class="flex flex-col gap-2 pr-3">
+          <a href="curtains.html" class="text-white/85 text-[14px] py-1">تفصيل الستائر</a>
+          <a href="electric-curtains.html" class="text-white/85 text-[14px] py-1">الستائر الكهربائية</a>
+          <a href="majlis.html" class="text-white/85 text-[14px] py-1">تنجيد المجالس</a>
+          <a href="upholstery.html" class="text-white/85 text-[14px] py-1">تنجيد الكنب</a>
+          <a href="sofa-repair.html" class="text-white/85 text-[14px] py-1">تصليح الكنب</a>
+        </div>
+      </div>
+      <a href="gallery.html" class="text-white py-3 border-b border-white/10">المعرض</a>
+      <a href="free-measurement.html" class="text-white py-3 border-b border-white/10">قياس مجاني</a>
+      <a href="blog.html" class="text-white py-3 border-b border-white/10">المدونة</a>
+      <a href="contact.html" class="text-white py-3">اتصل بنا</a>
     </nav>
   </div>
 </header>
